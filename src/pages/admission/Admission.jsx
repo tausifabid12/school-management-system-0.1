@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Checkbox, DatePicker, Form, Input, Select } from 'antd';
+import axios from 'axios';
 const { Option } = Select;
 
 const Admission = () => {
 
+    const [roll, setRoll] = useState(100000)
+    const [message, setMessage] = useState(null)
 
-    const onFinish = (fieldsValue) => {
+    useEffect(() => {
+        setRoll(roll + 1)
+    }, [roll])
+
+    const onFinish = async (fieldsValue) => {
+
+
 
         const values = {
             ...fieldsValue,
             'date-of-birth': fieldsValue['dob'].format('YYYY-MM-DD'),
         }
         console.log('Received values of form: ', values);
+
+
+
+        try {
+            const res = await axios.post('http://localhost:5000/posts', { ...values, rollNumber: roll });
+            console.log(res.data);
+            setMessage(`data created successfully. your roll number is ${roll}`)
+        } catch (error) {
+            console.log(error);
+        }
     };
 
 
@@ -19,7 +38,7 @@ const Admission = () => {
     return (
         <div className='container mx-auto'>
 
-
+            {message && <div className='bg-green-500 p-2 text-white text-center'>{message}</div>}
             <div>
                 <div className='block  rounded-lg shadow-lg bg-white mt-5'>
 
@@ -100,13 +119,7 @@ const Admission = () => {
 
 
 
-                            <Form.Item label="Date of Birth" name="dob" rules={[
-                                {
-                                    required: true,
-                                    message: 'Please input your birth date!',
-                                    whitespace: true,
-                                },
-                            ]}>
+                            <Form.Item label="Date of Birth" name="dob" >
                                 <DatePicker className='w-full'
 
 
@@ -173,7 +186,7 @@ const Admission = () => {
                             // {...tailFormItemLayout}
                             >
                                 <Checkbox>
-                                    I have read the <a href="">agreement</a>
+                                    I have read the agreement
                                 </Checkbox>
                             </Form.Item>
 

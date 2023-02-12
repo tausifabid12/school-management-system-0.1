@@ -1,19 +1,123 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "json-server",
-            "author": "typicode"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 100002,
+      "id": 2
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 100002,
+      "id": 3
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 100076,
+      "id": 4
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 100225,
+      "id": 5
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 100417,
+      "id": 6
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 100946,
+      "id": 7
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 101061,
+      "id": 8
+    },
+    {
+      "class": "seven",
+      "firstName": "Abu",
+      "lastName": "Sufian",
+      "gender": "female",
+      "dob": "2023-02-21T19:05:45.015Z",
+      "phone": "+8801774251164",
+      "email": "abu49539@gmail.com",
+      "agreement": true,
+      "date-of-birth": "2023-02-22",
+      "rollNumber": 101407,
+      "id": 9
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
